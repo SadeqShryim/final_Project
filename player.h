@@ -13,7 +13,6 @@ private:
 	int value;
 	int balance;
 
-
 public:
 	Player(int straightBalance = 100);
 	void addCard(const Card& card);
@@ -21,6 +20,8 @@ public:
 	string showHand() const;
 	int getBalance() const;
 	void updateBalance(int amount);
+	bool isLose() const;
+	void clearHand();
 
 };
 

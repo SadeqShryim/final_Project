@@ -133,6 +133,7 @@
     <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlackJack.h" />
     <ClInclude Include="cards.h" />
     <ClInclude Include="deck.h" />
     <ClInclude Include="player.h" />

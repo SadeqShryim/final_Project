@@ -2,6 +2,7 @@
 #define BLACKJACK_H
 #include "player.h"
 #include "deck.h"
+using namespace std;
 class BlackJack {
 
 private:
@@ -10,8 +11,13 @@ private:
 	Player dealer;
 
 public:
-	void dealCards();
-	void resetHands();
+	BlackJack(const Player& dealer,const Player& player);
+	void playerHand() const;
+	void dealerHand(bool Reveal) const;
 	void playRound();
+	void reset();
+	void dealCards();
+	void reshuffle();
+
 };
 #endif

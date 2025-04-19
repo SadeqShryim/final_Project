@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlackJack.cpp" />
     <ClCompile Include="cards.cpp" />
     <ClCompile Include="deck.cpp" />
     <ClCompile Include="main.cpp" />

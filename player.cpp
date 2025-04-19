@@ -54,3 +54,7 @@ bool Player::isLose() const {
 void Player::clearHand() {
 	hand.clear();
 }
+
+Card Player::getCardAt(int index) const {
+	return hand[index];
+}

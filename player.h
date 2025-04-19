@@ -22,7 +22,7 @@ public:
 	void updateBalance(int amount);
 	bool isLose() const;
 	void clearHand();
-
+	Card getCardAt(int index) const;
 };
 
 #endif

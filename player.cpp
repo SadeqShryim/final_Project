@@ -58,3 +58,7 @@ void Player::clearHand() {
 Card Player::getCardAt(int index) const {
 	return hand[index];
 }
+
+const vector <Card>& Player::getHand() const {
+	return hand;
+}

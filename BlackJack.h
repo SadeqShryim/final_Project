@@ -11,13 +11,23 @@ private:
 	Player dealer;
 
 public:
-	BlackJack(const Player& dealer,const Player& player);
+	BlackJack(const Player& dealer, const Player& player);
 	void playerHand() const;
+//Day 8
+	void playerTurn();
+	void dealerTurn();
+//-----
+
 	void dealerHand(bool Reveal) const;
 	void playRound();
 	void reset();
 	void dealCards();
 	void reshuffle();
 
+//Day 8
+	void whoWon();
+	void adjust(int outcome);
+	bool checkGame(const Player& player) const;
+//-----
 };
 #endif

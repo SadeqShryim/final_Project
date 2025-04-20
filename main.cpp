@@ -21,14 +21,23 @@ int main() {
 
 	cout << (player.isLose() ? "You lose the hand\n" : "You are still in \n");*/
 
-	//blackjack test
+	////blackjack test - part 1
 	Player player(100);
 	Player dealer(0);
-	BlackJack Game(dealer, player);
+	BlackJack testGame(dealer, player);
 
 	cout << "BLACK JACK" << endl;
 
-	Game.playRound();
+	testGame.reset();
+	testGame.dealCards();
 
+	testGame.playerHand();
+	testGame.dealerHand(false);
+
+	testGame.playerTurn();
+
+
+	cout << "Chose: \n1) Hit\n2) Stand " << endl;
+	cout << "---------" << endl;
 	return 0;
 }

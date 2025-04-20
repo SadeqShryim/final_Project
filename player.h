@@ -23,6 +23,7 @@ public:
 	bool isLose() const;
 	void clearHand();
 	Card getCardAt(int index) const;
+	const vector <Card>& getHand() const;
 };
 
 #endif

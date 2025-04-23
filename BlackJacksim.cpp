@@ -4,6 +4,7 @@
 #include "cards.h"
 #include <ctime> 
 #include <iostream>
+#include <iomanip>
 
 void BlackJackSim::simulator(int rounds) {
 	srand(time(0));
@@ -73,9 +74,9 @@ void BlackJackSim::display() const {
 			const Stats& hit = hitIt != hitResults.end() ? hitIt->second : Stats{};
 			const Stats& stand = standIt != standResults.end() ? standIt->second : Stats{};
 
-			cout << "   " << total << "    |  "
-				<< hit.win << "-" << hit.loss << "-" << hit.draw << "       |  "
-				<< stand.win << "-" << stand.loss << "-" << stand.draw << "\n";
+			cout << setw(14) << total << " | ";
+			cout << setw(7) << hit.win << "-" << hit.loss << "-" << hit.draw << "   | ";
+			cout << setw(7) << stand.win << "-" << stand.loss << "-" << stand.draw << endl;
 		}
 	}
 }
